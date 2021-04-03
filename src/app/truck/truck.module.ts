@@ -10,6 +10,7 @@ import { TruckListComponent } from './truck-list/truck-list.component';
   imports: [
     CommonModule,
     TruckRoutingModule
-  ]
+  ],
+  exports: [ TruckListComponent ]
 })
 export class TruckModule { }
