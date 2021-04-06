@@ -12,6 +12,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { TruckModule } from './truck/truck.module';
+import { HttpClientModule } from '@angular/common/http';
+
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { TruckData } from './truck/truck-data';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { TruckModule } from './truck/truck.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    TruckModule
+    TruckModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(TruckData, { delay: 100 })
   ],
   providers: [],
   bootstrap: [AppComponent]
