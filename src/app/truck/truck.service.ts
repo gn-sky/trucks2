@@ -14,4 +14,8 @@ export class TruckService {
   getTrucks(): Observable<Truck[]> {
     return this.http.get<Truck[]>(this.trucksUrl);
   }
+
+  deleteTruck(id: number): Observable<Truck[]> {
+    return this.http.delete<Truck[]>(`${this.trucksUrl}/${id}`);
+  }
 }
