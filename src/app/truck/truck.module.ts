@@ -22,6 +22,6 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
     MatSortModule,
     MatTableModule
   ],
-  exports: [ TruckListComponent ]
+  exports: [ TruckListComponent, ConfirmationDialogComponent ]
 })
 export class TruckModule { }
