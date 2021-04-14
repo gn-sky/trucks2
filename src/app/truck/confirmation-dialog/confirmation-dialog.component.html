@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Confirm</h1>
+<mat-dialog-content>Are you sure you want to remove this item?</mat-dialog-content>
+<mat-dialog-actions>
+    <button 
+        mat-raised-button
+        color="primary" 
+        [mat-dialog-close]="true"
+        cdkFocusInitial>
+            Yes
+    </button>
+    <button mat-raised-button mat-dialog-close>No</button>
+</mat-dialog-actions>

@@ -33,7 +33,7 @@
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef> Actions </th>
       <td mat-cell *matCellDef="let element">
-        <span class="material-icons" (click)="deleteTruck(element.truckId)">delete_outline</span>
+        <span class="material-icons" (click)="confirmDelete(element.truckId)">delete_outline</span>
       </td>
     </ng-container>    
   
