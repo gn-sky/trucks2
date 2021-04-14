@@ -33,7 +33,7 @@ export class TruckListComponent implements OnInit, OnDestroy {
       });
   }
 
-  confirmDelete(id: number) {
+  confirmDelete(id: number): void {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent);
 
     dialogRef.afterClosed()
@@ -42,7 +42,7 @@ export class TruckListComponent implements OnInit, OnDestroy {
         if (answer) {
           this.deleteTruck(id);
         }
-      })
+      });
   }
 
   private deleteTruck(id: number): void {
